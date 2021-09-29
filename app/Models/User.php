@@ -46,4 +46,9 @@ class User extends Authenticatable
     public function roles(){
         return $this->belongsToMany(Role::class);
     }
+
+    //One to Many relationship with Penalty model
+    public function penalties(){
+        return $this->hasMany(Penalty::class);
+    }
 }

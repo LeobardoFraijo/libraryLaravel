@@ -9,6 +9,7 @@ class Role_User extends Model
 {
     use HasFactory;
 
+    
     public function role(){
         return $this->belongsTo(Role::class);
     }
