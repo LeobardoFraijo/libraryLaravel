@@ -11,21 +11,21 @@ class Penalty extends Model
 
     //many to one relationship with PenaltyStatus Model
     public function penalty_status(){
-        return $this->BelongsTo(PenaltyStatus::class);
+        return $this->belongsTo(PenaltyStatus::class);
     }
 
     //many to one relationship with PenaltyType Model
     public function penalty_type(){
-        return $this->BelongsTo(PenaltyType::class);
+        return $this->belongsTo(PenaltyType::class);
     }
 
     //many to one relationship with FinalUser Model
     public function final_user(){
-        return $this->BelongsTo(FinalUser::class);
+        return $this->belongsTo(FinalUser::class);
     }
 
     //many to one relationship with User Model
     public function user(){
-        return $this->BelongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 }

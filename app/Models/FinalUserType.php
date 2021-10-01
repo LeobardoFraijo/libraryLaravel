@@ -13,4 +13,6 @@ class FinalUserType extends Model
     public function final_users(){
         return $this->hasMany(FinalUser::class);
     }
+
+    
 }
