@@ -18,4 +18,9 @@ class Book extends Model
     public function booktype(){
         return $this->belongsTo(BookType::class);
     }
+
+    //One to many relationship with Copy Model
+    public function copies(){
+        return $this->hasMany(Copy::class);
+    }
 }

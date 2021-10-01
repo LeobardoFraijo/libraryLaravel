@@ -9,12 +9,18 @@ class Bookshelf extends Model
 {
     use HasFactory;
 
-    //One to many relationship with Bookshelf Model
+    //many to one relationship with Bookshelf Model
     public function area(){
-        return $this->BelongsTo(Area::class);
+        return $this->belongsTo(Area::class);
     }
 
+    //many to one relationship with Bookshelf Model
     public function library(){
-        return $this->BelongsTo(Library::class);
+        return $this->belongsTo(Library::class);
+    }
+
+    //One to many relationship with Copy Model
+    public function copies(){
+        return $this->hasMany(Copy::class);
     }
 }

@@ -18,4 +18,14 @@ class FinalUser extends Model
     public function penalties(){
         return $this->hasMany(Penalty::class);
     }
+
+    //One to many relationship with BookOrder Model
+    public function book_orders(){
+        return $this->hasMany(BookOrder::class);
+    }
+
+    //One to many relationship with Devolution Model
+    public function devolutions(){
+        return $this->hasMany(Devolution::class);
+    }
 }
