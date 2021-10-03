@@ -3,6 +3,7 @@
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminIndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,6 @@ Route::get('/', HomeController::class);
 Route::get('libros', [BookController::class, 'index']);
 Route::get('libros/create', [BookController::class, 'create']);
 Route::get('libros/{libro}', [BookController::class, 'show']);
+
+Route::get('admin', [AdminIndexController::class, 'index']);
 

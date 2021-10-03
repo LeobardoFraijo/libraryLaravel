@@ -1,0 +1,116 @@
+/* <-----Custom-Properties------>  */
+
+:root{
+    --menu-width-desktop: 200px;
+    --menu-width-tablet: 90px;
+    --menu-width-smartphone: 230px;
+
+    /*-----header-----*/
+    --header-backgroundcolor: #273746;
+}
+
+
+
+/* <-----HEADER------>  */
+
+.admin_header{
+    
+    background-color: var(--header-backgroundcolor);
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 2em .5em 2em;
+
+}
+
+.logo_unison{
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;  
+}
+
+.list_content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.list_content *{
+    margin: 0 1em 0 1em;
+    list-style: none;
+}
+
+.list_content li *{
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+
+.info_library *{
+    margin: 0 1em 0 1em
+}
+
+.info_library{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.info_library h4{
+    color: white;
+}
+
+.admin_header button{
+    background-color: red; 
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.content{
+    display: flex;
+
+}
+
+/* <-----Content------>  */
+
+
+
+/* <-----SIDE-BAR----->  */
+
+.side_bar{
+    background-color: var(--header-backgroundcolor);
+    margin: 0;
+    padding: 1.5em;
+    width: var(--menu-width-desktop);
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.profile_img{
+    border-radius: 50%;
+    width: 7em;
+    height: 7em; 
+    
+}
+
+.ul_content{
+    padding: 1em;
+}
+
+.side_bar li{
+    font-size: 1.2em;   
+    list-style: none;
+    margin: 1.5em 0 0 0;
+}
+
+.side_bar li a{
+    color: white;
+    text-decoration: none;
+}
+
+.side_bar li a:hover{
+    border-bottom: white solid 4px;
+}
