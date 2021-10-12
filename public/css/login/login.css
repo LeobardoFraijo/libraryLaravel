@@ -1,0 +1,127 @@
+/* <-----Custom-Properties------>  */
+
+:root{   
+
+    --gray-color: rgb(141, 140, 140);
+    --white-color:rgb(240, 231, 231) ;
+    --dark-blue: rgb(31, 105, 174);
+    --red-color: rgb(222, 7, 7);
+    --dark-color: rgb(23, 21, 21);
+    --header-backgroundcolor: #273746;
+
+    /*-----header-----*/
+
+}
+
+body{
+    background: linear-gradient(to bottom, var(--header-backgroundcolor), var(--white-color));
+}
+
+/* <-----HEADER------>  */
+
+.login-header{
+    
+    position: fixed; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4em;
+    width: 100%;
+}
+
+.login-header-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3em;
+    margin-right: 1em;
+}
+
+.login-list_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;    
+}
+
+.login-list_content li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--white-color);
+}
+
+.login-list_content li a:hover{
+    padding-bottom: .5em;
+    border-bottom: 2px solid var(--white-color);
+    transition: .3s;
+}
+
+.login-list_content li a:visited {
+    color: var(--white-color);    
+}
+
+.login-list_content li{
+    margin-left: 1em;
+}
+
+/* <-----CONTENT------>  */
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-card{
+    background-color: var(--gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 2em 5em 2em;
+    height: 18em;
+    width: 18em;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 5px var(--dark-color);
+}
+
+.login-card #user{
+    padding-right: 2.4em;
+    
+}
+
+.login-card #password{
+    padding-right: 1em;
+    
+}
+
+.login-card input{
+    width: 10em;
+    height: 1.5em;
+    border-radius: 6px;
+}
+
+.login-card .login-button{
+    position: absolute;
+    top: 15em;
+    left: 12em;
+    height: 2em;
+    width: 5em;
+    background-color: var(--dark-blue);
+    border: 2px solid var(--dark-color);
+    border-radius: 8px;
+}
+
+.login-button:hover{
+    background-color: var(--white-color);
+    border: 3px solid var(--dark-blue);
+    border-radius:10px;
+    height:2.5em;
+    width:5.5em;
+    transition: .3s;
+    top: 14.75em;
+    left: 11.75em;
+}
