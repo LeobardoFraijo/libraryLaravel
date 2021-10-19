@@ -135,8 +135,33 @@
     border: 5px solid var(--dark-blue);    
     height: 6em; 
     width: 11em;  
-    transition: .3s;
-       
+    transition: .3s;       
+}
+
+.stadistics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.stadistic-card{
+    background-color: var(--gray-color);
+    width: 15em;
+    height: 20em;
+    border-radius: 5px;
+    margin: 0 1em 0 1em;
+}
+
+.stadistics-content{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+.stadistics-content li{
+    list-style: none;
 }
 
 
