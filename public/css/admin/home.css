@@ -14,6 +14,9 @@
     --header-backgroundcolor: #273746;
 }
 
+body{
+    background-color: var(--white-color);
+}
 
 
 /* <-----HEADER------>  */
@@ -53,8 +56,7 @@
 .list_content li *{
     font-size: 1.2em;
     color: var(--white-color);
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 
 .info_library *{
@@ -97,8 +99,44 @@
 
 .home-content{
     margin-left: 232px;    
-    padding: 5em 1em 1em 1em;
+    padding: 5em 1em 1em 1em;    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3em;
     
+    
+}
+
+.input-nav{
+    width: 18em;
+    min-width: 10em;
+    margin-left: 2em;
+    border-radius: 3px;
+    border-color: none;
+    background-color: var(--white-color);
+}
+
+.search-button:link{    
+    background-color: var(--white-color);    
+}
+
+.search-button:hover{    
+    background-color: var(--white-color);    
+}
+
+.search-icon{
+    margin-left: 1em;
+    color: var(--header-backgroundcolor);
+    
+}
+
+.nav-links{
+    margin-right: 2em;
 }
 
 .buttons-container{
@@ -106,8 +144,7 @@
     justify-content: space-evenly;
     align-items: center; 
     padding: 1em 1em;   
-    height: 5em;
-       
+    height: 5em;       
 }
 
 .home-button{
@@ -120,8 +157,7 @@
     justify-content: center;
     align-items: center;
     border: 3px solid transparent; 
-    box-shadow: 5px 5px 4px var(--header-backgroundcolor); 
-     
+    box-shadow: 5px 5px 4px var(--header-backgroundcolor);      
 }
 
 .home-button .size-icon{
@@ -136,6 +172,30 @@
     height: 6em; 
     width: 11em;  
     transition: .3s;       
+}
+
+.edit-button{
+    background-color: var(--white-color);  
+    border: 3px solid var(--gray-color); 
+    height: 1.7em; 
+    width: 4em;
+    border-radius: 8px;
+}
+
+.show-button{
+    background-color: var(--white-color);  
+    border: 3px solid var(--header-backgroundcolor); 
+    height: 1.7em; 
+    width: 4em;
+    border-radius: 8px;
+}
+
+.delete-button{
+    background-color: var(--white-color);  
+    border: 3px solid var(--red-color); 
+    height: 1.7em; 
+    width: 4em;
+    border-radius: 8px;
 }
 
 .stadistics{
@@ -162,6 +222,78 @@
 
 .stadistics-content li{
     list-style: none;
+}
+
+/*  books content*/
+
+.books-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1em;
+}
+
+.book-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 1em 1em;
+    border: 2px solid var(--gray-color);  
+    border-radius: 3px;  
+}
+
+.book-card img{
+    width: 6em;
+    height: 6em;
+}
+
+.book-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-key li{
+    list-style: none;
+}
+
+.info-value li{
+    list-style: none;
+}
+
+.books-table{    
+    max-width: 600px;
+}
+
+.books-table table{
+    border: 2px solid var(--gray-color);
+    border-radius: 3px;
+    position: relative;
+}
+
+.books-table thead::after{
+    content: '';
+    width: calc(100% - 1em);
+    height: 1px;
+    left: .5em;
+    background-color: var(--header-backgroundcolor);
+    position: absolute;
+}
+
+.books-table th{
+    width: 12em;
+    height: 2em;
+    
+}
+
+.books-table #name{
+    width: 30em;
+}
+
+.books-table tbody td{
+    text-align: center;
 }
 
 
