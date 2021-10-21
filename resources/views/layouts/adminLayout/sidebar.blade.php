@@ -1,6 +1,6 @@
 <nav class="side_bar">
 
-    <img class="profile_img "src="img/imagenPerfil.png" alt="Imagen">
+    <img class="profile_img" src="/img/imagenPerfil.png" alt="Imagen">
 
     <ul class="ul_content">
         <li><a href="#">Inicio</a></li>
