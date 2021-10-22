@@ -42,11 +42,9 @@
                                 <input type="text" name="editorial" id="editorial">
                                 <input type="text" name="idioma" id="idioma">
                                 <input type="text" name="paginas" id="paginas">
-                            </div>
-                            
+                            </div>                            
                         </div>
-                        <br>
-                        <input type="submit" value="guardar" class="edit-button">
+                    <input type="submit" value="guardar" class="edit-button">           
                     </form>
                 </div>
             </div> 

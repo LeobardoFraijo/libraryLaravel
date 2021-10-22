@@ -107,9 +107,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 3em;
-    
-    
+    height: 3em;   
 }
 
 .input-nav{
@@ -132,7 +130,6 @@ body{
 .search-icon{
     margin-left: 1em;
     color: var(--header-backgroundcolor);
-    
 }
 
 .nav-links{
