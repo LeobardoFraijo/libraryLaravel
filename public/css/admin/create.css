@@ -1,0 +1,61 @@
+:root{
+    --menu-width-desktop: 200px;
+    --menu-width-tablet: 90px;
+    --menu-width-smartphone: 230px;
+    
+
+    --gray-color: rgb(141, 140, 140);
+    --white-color:rgb(240, 231, 231) ;
+    --dark-blue: rgb(31, 105, 174);
+    --red-color: rgb(222, 7, 7);
+    /*-----header-----*/
+    --header-backgroundcolor: #273746;
+}
+
+.create-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-form-content{
+    min-width: 25em;
+    width: 30em;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em 1em 1em 1em;
+    padding: 0 1em 1em 1em;
+    border: 2px solid var(--gray-color);  
+    border-radius: 3px;
+}
+
+.create-image{
+    width: 10em;
+    height: 10em;
+    margin: 1em;
+}
+
+.create-form-content input[type=text]{
+    width: 100%;
+    margin: .3em 0 .3em 0;
+    padding: .3em;
+    border: none;
+    border-bottom: 2px solid var(--header-backgroundcolor);
+    background-color: var(--white-color);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.create-form-content input[type=text]:focus{
+    border: 2px solid var(--header-backgroundcolor);
+    border-radius: 4px;
+}
+
+.create-form-content input[type=submit]{
+    float: right;
+    
+}
