@@ -25,21 +25,24 @@
                                 <th id="name">Nombre</th>
                                 <th>Autor</th>
                                 <th>Fecha de Publicación</th>                                
-                                <th>Edicion</th>
+                                
                                 <th>Editorial</th>
                             </tr>                            
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Clean Code</td>
-                                <td>Roberto Martin</td>
-                                <td>2008</td>
-                                <td>1er edición</td>
-                                <td>Pearson</td>
-                                <td><button class="edit-button">Editar</button></td>
-                                <td><button class="show-button">Mostrar</button></td>
-                                <td><button class="delete-button">Eliminar</button></td>
-                            </tr>
+                            @foreach ($bookList as $book)
+                                <tr>
+                                    <td>{{$book->name}}</td>
+                                    <td>@foreach ($book->authors as $author)
+                                        {{$author->name}}
+                                    @endforeach</td>
+                                    <td>{{$book->publication_date}}</td>
+                                    
+                                    <td>{{$book->publisher}}</td>
+                                    
+                                </tr>
+                            @endforeach
+                            
                         </tbody>
                     </table>                
                 </div> 
