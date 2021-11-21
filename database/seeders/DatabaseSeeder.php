@@ -20,5 +20,9 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(FinalUserSeeder::class);
         $this->call(PenaltySeeder::class);
+        $this->call(LibrarySeeder::class);
+        $this->call(BookshelfSeeder::class);
+        $this->call(CopySeeder::class);
+        
     }
 }
