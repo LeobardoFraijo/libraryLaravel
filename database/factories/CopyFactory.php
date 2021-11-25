@@ -22,18 +22,6 @@ class CopyFactory extends Factory
      */
     public function definition()
     {
-        $copyStatus = new CopyStatus();
-        $copyStatus->name = "disponible";
-        $copyStatus->save();
-
-        $copyStatus2 = new CopyStatus();
-        $copyStatus2->name = "prestado";
-        $copyStatus->save();
-
-        $copyStatus3 = new CopyStatus();
-        $copyStatus3->name = "extraviado";
-        $copyStatus3->save();
-
         return [
             'loan_days' => $this->faker->numberBetween(5, 10),
             'code' => $this->faker->randomLetter().strval($this->faker->randomNumber(5)),
