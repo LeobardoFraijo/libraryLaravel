@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCopyOrderTable extends Migration
+class BookOrderCopy extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,17 @@ class CreateCopyOrderTable extends Migration
      */
     public function up()
     {
-        Schema::create('copy_order', function (Blueprint $table) {
-            
+        Schema::create('book_order_copy', function (Blueprint $table) {            
+
             $table->unsignedBigInteger('book_order_id');
             $table->foreign('book_order_id')->references('id')->on('book_orders');
 
             $table->unsignedBigInteger('copy_id');
             $table->foreign('copy_id')->references('id')->on('copies');
 
-            $table->datetime('delivery_day');
-
             $table->timestamps();
         });
+        
     }
 
     /**
@@ -34,6 +33,6 @@ class CreateCopyOrderTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('copy_order');
+        Schema::dropIfExists('book_order_copy');
     }
 }
