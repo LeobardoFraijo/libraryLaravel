@@ -24,5 +24,6 @@ class DatabaseSeeder extends Seeder
         $this->call(BookshelfSeeder::class);
         $this->call(CopySeeder::class);
         $this->call(BookOrderSeeder::class);
+        $this->call(DevolutionSeeder::class);
     }
 }
