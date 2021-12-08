@@ -51,8 +51,7 @@ class BookOrderSeeder extends Seeder
                         $usedCopiesArray[] = $copy; 
                         $conditional = 1;      
                     }
-                }
-                  
+                }                  
             }elseif($percentage <= 6 && $percentage > 2){
                 while($conditional == 0){
                     $copy = rand(1, 100);
@@ -66,8 +65,7 @@ class BookOrderSeeder extends Seeder
                         $usedCopiesArray[] = $copy2;
                         $conditional = 1;      
                     }
-                }               
-                
+                }                 
             }elseif($percentage <= 10 && $percentage > 6){
                 while($conditional == 0){
                     $copy = rand(1, 100);
